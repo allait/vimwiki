@@ -7,35 +7,31 @@
 " text: *strong*
 " let g:vimwiki_rxBold = '\*[^*]\+\*'
 let g:vimwiki_rxBold = '\%(^\|\s\|[[:punct:]]\)\@<='.
-      \'\*'.
-      \'\%([^*`[:space:]][^*`]*[^*`[:space:]]\|[^*`[:space:]]\)'.
-      \'\*'.
+      \'\(\*\*\|__\)'.
+      \'\%([^*_`[:space:]][^*_`]*[^*_`[:space:]]\|[^*_`[:space:]]\)'.
+      \'\(\*\*\|__\)'.
       \'\%([[:punct:]]\|\s\|$\)\@='
-let g:vimwiki_char_bold = '*'
+let g:vimwiki_char_bold = '\*\*\|__'
 
 " text: _emphasis_
 " let g:vimwiki_rxItalic = '_[^_]\+_'
 let g:vimwiki_rxItalic = '\%(^\|\s\|[[:punct:]]\)\@<='.
-      \'_'.
-      \'\%([^_`[:space:]][^_`]*[^_`[:space:]]\|[^_`[:space:]]\)'.
-      \'_'.
+      \'\(\*\|_\)'.
+      \'\%([^*_`[:space:]][^*_`]*[^*_`[:space:]]\|[^*_`[:space:]]\)'.
+      \'\(\*\|_\)'.
       \'\%([[:punct:]]\|\s\|$\)\@='
-let g:vimwiki_char_italic = '_'
+let g:vimwiki_char_italic = '\*\|_'
 
 " text: *_bold italic_* or _*italic bold*_
 let g:vimwiki_rxBoldItalic = '\%(^\|\s\|[[:punct:]]\)\@<='.
-      \'\*_'.
+      \'\(\*\*\*\|___\)'.
       \'\%([^*_`[:space:]][^*_`]*[^*_`[:space:]]\|[^*_`[:space:]]\)'.
-      \'_\*'.
+      \'\(\*\*\*\|___\)'.
       \'\%([[:punct:]]\|\s\|$\)\@='
-let g:vimwiki_char_bolditalic = '\*_'
+let g:vimwiki_char_bolditalic = '\*\*\*\|___'
 
-let g:vimwiki_rxItalicBold = '\%(^\|\s\|[[:punct:]]\)\@<='.
-      \'_\*'.
-      \'\%([^*_`[:space:]][^*_`]*[^*_`[:space:]]\|[^*_`[:space:]]\)'.
-      \'\*_'.
-      \'\%([[:punct:]]\|\s\|$\)\@='
-let g:vimwiki_char_italicbold = '_\*'
+let g:vimwiki_rxItalicBold = g:vimwiki_rxBoldItalic
+let g:vimwiki_char_italicbold = g:vimwiki_char_bolditalic
 
 " text: `code`
 let g:vimwiki_rxCode = '`[^`]\+`'
