@@ -221,7 +221,7 @@ hi def link VimwikiPreT VimwikiPre
 hi def link VimwikiNoExistsLink SpellBad
 hi def link VimwikiNoExistsLinkT VimwikiNoExistsLink
 
-hi def link VimwikiLink Underlined
+hi def VimwikiLink term=underline cterm=underline ctermfg=DarkBlue gui=underline guifg=DarkBlue
 hi def link VimwikiLinkT VimwikiLink
 
 hi def link VimwikiList Identifier
