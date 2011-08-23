@@ -199,13 +199,13 @@ endif
 
 hi def link VimwikiMarkers Normal
 
-hi def VimwikiBold term=bold cterm=bold gui=bold
+hi def VimwikiBold term=bold ctermfg=DarkYellow gui=bold
 hi def link VimwikiBoldT VimwikiBold
 
-hi def VimwikiItalic term=italic cterm=italic gui=italic
+hi def VimwikiItalic term=italic ctermfg=Yellow gui=italic
 hi def link VimwikiItalicT VimwikiItalic
 
-hi def VimwikiBoldItalic term=bold cterm=bold gui=bold,italic
+hi def VimwikiBoldItalic term=bold ctermfg=Red gui=bold,italic
 hi def link VimwikiItalicBold VimwikiBoldItalic
 hi def link VimwikiBoldItalicT VimwikiBoldItalic
 hi def link VimwikiItalicBoldT VimwikiBoldItalic
