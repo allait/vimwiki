@@ -38,6 +38,8 @@ setlocal isfname-=[,]
 if VimwikiGet('syntax') == 'default'
   setl comments=b:*,b:#,b:-
   setl formatlistpat=^\\s*[*#-]\\s*
+elseif VimwikiGet('syntax') == 'markdown'
+    setl com=fb:*,fb:-,fb:+,n:>
 else
   setl comments=n:*,n:#
 endif
