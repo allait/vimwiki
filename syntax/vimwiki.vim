@@ -218,7 +218,7 @@ hi def link VimwikiCodeT VimwikiCode
 hi def link VimwikiPre PreProc
 hi def link VimwikiPreT VimwikiPre
 
-hi def link VimwikiNoExistsLink SpellBad
+hi def link VimwikiNoExistsLink Error
 hi def link VimwikiNoExistsLinkT VimwikiNoExistsLink
 
 hi def VimwikiLink term=underline cterm=underline ctermfg=DarkBlue gui=underline guifg=DarkBlue
