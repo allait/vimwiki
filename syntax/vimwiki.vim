@@ -181,13 +181,13 @@ if g:vimwiki_hl_headers == 0
   hi link VimwikiHeader6 Title
 else
   if &background == 'light'
-    hi def VimwikiHeader1 guibg=bg guifg=#aa5858 gui=bold ctermfg=DarkRed   term=bold cterm=bold 
-    hi def VimwikiHeader2 guibg=bg guifg=#507030 gui=bold ctermfg=DarkGreen term=bold cterm=bold 
-    hi def VimwikiHeader3 guibg=bg guifg=#1030a0 gui=bold ctermfg=DarkBlue  term=bold cterm=bold 
-    hi def VimwikiHeader4 guibg=bg guifg=#103040 gui=bold ctermfg=Black     term=bold cterm=bold 
-    hi def VimwikiHeader5 guibg=bg guifg=#505050 gui=bold ctermfg=Black     term=bold cterm=bold 
-    hi def VimwikiHeader6 guibg=bg guifg=#636363 gui=bold ctermfg=Black     term=bold cterm=bold 
-  else                                                                                           
+    hi def VimwikiHeader1 guibg=bg guifg=#aa5858 gui=bold ctermfg=DarkRed
+    hi def VimwikiHeader2 guibg=bg guifg=#507030 gui=bold ctermfg=DarkGreen
+    hi def VimwikiHeader3 guibg=bg guifg=#1030a0 gui=bold ctermfg=DarkBlue
+    hi def VimwikiHeader4 guibg=bg guifg=#103040 gui=bold ctermfg=Black
+    hi def VimwikiHeader5 guibg=bg guifg=#505050 gui=bold ctermfg=Black
+    hi def VimwikiHeader6 guibg=bg guifg=#636363 gui=bold ctermfg=Black
+  else
     hi def VimwikiHeader1 guibg=bg guifg=#e08090 gui=bold ctermfg=Red       term=bold cterm=bold 
     hi def VimwikiHeader2 guibg=bg guifg=#80e090 gui=bold ctermfg=Green     term=bold cterm=bold 
     hi def VimwikiHeader3 guibg=bg guifg=#6090e0 gui=bold ctermfg=Blue      term=bold cterm=bold 
@@ -199,13 +199,13 @@ endif
 
 hi def link VimwikiMarkers Normal
 
-hi def VimwikiBold term=bold ctermfg=DarkYellow gui=bold
-hi def link VimwikiBoldT VimwikiBold
-
-hi def VimwikiItalic term=italic ctermfg=Yellow gui=italic
+hi def VimwikiItalic term=italic ctermfg=130 gui=italic
 hi def link VimwikiItalicT VimwikiItalic
 
-hi def VimwikiBoldItalic term=bold ctermfg=Red gui=bold,italic
+hi def VimwikiBold term=bold ctermfg=136 gui=bold
+hi def link VimwikiBoldT VimwikiBold
+
+hi def VimwikiBoldItalic term=bold ctermfg=142 gui=bold,italic
 hi def link VimwikiItalicBold VimwikiBoldItalic
 hi def link VimwikiBoldItalicT VimwikiBoldItalic
 hi def link VimwikiItalicBoldT VimwikiBoldItalic
