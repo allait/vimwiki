@@ -184,9 +184,9 @@ else
     hi def VimwikiHeader1 guibg=bg guifg=#aa5858 gui=bold ctermfg=DarkRed
     hi def VimwikiHeader2 guibg=bg guifg=#507030 gui=bold ctermfg=DarkGreen
     hi def VimwikiHeader3 guibg=bg guifg=#1030a0 gui=bold ctermfg=DarkBlue
-    hi def VimwikiHeader4 guibg=bg guifg=#103040 gui=bold ctermfg=Black
-    hi def VimwikiHeader5 guibg=bg guifg=#505050 gui=bold ctermfg=Black
-    hi def VimwikiHeader6 guibg=bg guifg=#636363 gui=bold ctermfg=Black
+    hi def VimwikiHeader4 guibg=bg guifg=#103040 gui=bold ctermfg=DarkGray
+    hi def VimwikiHeader5 guibg=bg guifg=#505050 gui=bold ctermfg=DarkGray
+    hi def VimwikiHeader6 guibg=bg guifg=#636363 gui=bold ctermfg=DarkGray
   else
     hi def VimwikiHeader1 guibg=bg guifg=#e08090 gui=bold ctermfg=Red       term=bold cterm=bold 
     hi def VimwikiHeader2 guibg=bg guifg=#80e090 gui=bold ctermfg=Green     term=bold cterm=bold 
